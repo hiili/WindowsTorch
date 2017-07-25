@@ -1,0 +1,8 @@
+libdir=C:/torch/lapack/lib
+includedir=C:/torch/lapack/include
+
+Name: BLAS
+Description: FORTRAN reference implementation of BLAS Basic Linear Algebra Subprograms
+Version: 3.7.1
+URL: http://www.netlib.org/blas/
+Libs: -L${libdir} -lblas
