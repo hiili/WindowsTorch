@@ -1,0 +1,232 @@
+commands = {}
+dependencies = {
+   cwrap = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   paths = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   torch = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "paths"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "cwrap"
+         }
+      }
+   }
+}
+modules = {
+   cwrap = {
+      "cwrap/scm-1"
+   },
+   ["cwrap.cinterface"] = {
+      "cwrap/scm-1"
+   },
+   ["cwrap.types"] = {
+      "cwrap/scm-1"
+   },
+   ["cwrap/README.md"] = {
+      "cwrap/scm-1"
+   },
+   libpaths = {
+      "paths/scm-1"
+   },
+   libtorch = {
+      "torch/scm-1"
+   },
+   paths = {
+      "paths/scm-1"
+   },
+   torch = {
+      "torch/scm-1"
+   },
+   ["torch.CmdLine"] = {
+      "torch/scm-1"
+   },
+   ["torch.FFI"] = {
+      "torch/scm-1"
+   },
+   ["torch.File"] = {
+      "torch/scm-1"
+   },
+   ["torch.Tensor"] = {
+      "torch/scm-1"
+   },
+   ["torch.TestSuite"] = {
+      "torch/scm-1"
+   },
+   ["torch.Tester"] = {
+      "torch/scm-1"
+   },
+   ["torch.test"] = {
+      "torch/scm-1"
+   },
+   ["torch/README.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/cmdline.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/diskfile.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/file.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/gather.png"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/index.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/maths.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/memoryfile.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/pipefile.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/random.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/serialization.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/storage.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/tensor.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/tester.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/timer.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/utility.md"] = {
+      "torch/scm-1"
+   }
+}
+repository = {
+   cwrap = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               cwrap = "cwrap/init.lua",
+               ["cwrap.cinterface"] = "cwrap/cinterface.lua",
+               ["cwrap.types"] = "cwrap/types.lua",
+               ["cwrap/README.md"] = "cwrap/README.md"
+            }
+         }
+      }
+   },
+   paths = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               libpaths = "libpaths.dll",
+               paths = "paths/init.lua"
+            }
+         }
+      }
+   },
+   torch = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1"
+            },
+            modules = {
+               libtorch = "libtorch.dll",
+               torch = "torch/init.lua",
+               ["torch.CmdLine"] = "torch/CmdLine.lua",
+               ["torch.FFI"] = "torch/FFI.lua",
+               ["torch.File"] = "torch/File.lua",
+               ["torch.Tensor"] = "torch/Tensor.lua",
+               ["torch.TestSuite"] = "torch/TestSuite.lua",
+               ["torch.Tester"] = "torch/Tester.lua",
+               ["torch.test"] = "torch/test.lua",
+               ["torch/README.md"] = "torch/README.md",
+               ["torch/doc/cmdline.md"] = "torch/doc/cmdline.md",
+               ["torch/doc/diskfile.md"] = "torch/doc/diskfile.md",
+               ["torch/doc/file.md"] = "torch/doc/file.md",
+               ["torch/doc/gather.png"] = "torch/doc/gather.png",
+               ["torch/doc/index.md"] = "torch/doc/index.md",
+               ["torch/doc/maths.md"] = "torch/doc/maths.md",
+               ["torch/doc/memoryfile.md"] = "torch/doc/memoryfile.md",
+               ["torch/doc/pipefile.md"] = "torch/doc/pipefile.md",
+               ["torch/doc/random.md"] = "torch/doc/random.md",
+               ["torch/doc/serialization.md"] = "torch/doc/serialization.md",
+               ["torch/doc/storage.md"] = "torch/doc/storage.md",
+               ["torch/doc/tensor.md"] = "torch/doc/tensor.md",
+               ["torch/doc/tester.md"] = "torch/doc/tester.md",
+               ["torch/doc/timer.md"] = "torch/doc/timer.md",
+               ["torch/doc/utility.md"] = "torch/doc/utility.md"
+            }
+         }
+      }
+   }
+}
