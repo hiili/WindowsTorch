@@ -1,0 +1,19 @@
+rock_manifest = {
+   ["fun-scm-1.rockspec"] = "b8fd66b052741f9bae72de1d6ed071b4",
+   lua = {
+      ["fun.lua"] = "8dfb9cd9fa556c3cf13acbc07f4a2581"
+   },
+   tests = {
+      [".gitignore"] = "84e1176faf63075a15f0ecdfdfb306f8",
+      ["basic.lua"] = "bb871f1004eaec02915776c9e4aed2d9",
+      ["compositions.lua"] = "50ed9dfa92ea3da494c03765d3c90f7d",
+      ["filtering.lua"] = "03c52b71ff2da7d1a6f5ba497434a3b2",
+      ["generators.lua"] = "f312b4d3bfa0fb2eec51a695129f6cc5",
+      ["indexing.lua"] = "bea44a3f1d90b7c9f6b0ce9d7be5bf34",
+      ["operators.lua"] = "618e01482453c0d0d3a99feb54c2bf67",
+      ["reducing.lua"] = "d2ce99c0ba6154197984de86031c65f1",
+      runtest = "514ac267a46b03f950133101fa77dc16",
+      ["slicing.lua"] = "5f41049eaeab14445de49d7180232de8",
+      ["transformations.lua"] = "16a739b6cef00a380e8c5b68528bc9f9"
+   }
+}
