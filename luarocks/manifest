@@ -15,6 +15,14 @@ dependencies = {
          }
       }
    },
+   fun = {
+      ["scm-1"] = {
+         {
+            constraints = {},
+            name = "lua"
+         }
+      }
+   },
    luaffi = {
       ["scm-1"] = {
          {
@@ -132,6 +140,9 @@ modules = {
    },
    ffi = {
       "luaffi/scm-1"
+   },
+   fun = {
+      "fun/scm-1"
    },
    libTHNN = {
       "nn/scm-1"
@@ -872,6 +883,18 @@ repository = {
                ["cwrap.cinterface"] = "cwrap/cinterface.lua",
                ["cwrap.types"] = "cwrap/types.lua",
                ["cwrap/README.md"] = "cwrap/README.md"
+            }
+         }
+      }
+   },
+   fun = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               fun = "fun.lua"
             }
          }
       }
