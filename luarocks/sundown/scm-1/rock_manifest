@@ -1,0 +1,23 @@
+rock_manifest = {
+   bin = {
+      mdcat = "db12ea53bfdc735610230849097cf874"
+   },
+   doc = {
+      ["LICENSE.md"] = "8abc83c1178e6f61ee7f6e459d0c175c",
+      ["README.md"] = "1cec45c1c487092878f64fc5640d58de"
+   },
+   lib = {
+      ["libsundown.dll"] = "c682ffaba899cfd8f488d0f689d4f6eb"
+   },
+   lua = {
+      sundown = {
+         ["ascii.lua"] = "bf08a04f855b4f556bdaf00ea2775583",
+         ["env.lua"] = "5b35ab3ee8cc43974867c3f316d45d3c",
+         ["html.lua"] = "b0322a7fb8fe418cc8428b93f4c271ad",
+         ["htmlcdefs.lua"] = "e5ae09bf725d1b5f1dacad2941fd54f9",
+         ["init.lua"] = "bbebe11a1ab5ed51e040fe5b9953ae6f",
+         ["sdcdefs.lua"] = "8d662f67899f1f0dcbfbe071ea4d92c9"
+      }
+   },
+   ["sundown-scm-1.rockspec"] = "3107405f4b306b0876a3d83e935c70df"
+}

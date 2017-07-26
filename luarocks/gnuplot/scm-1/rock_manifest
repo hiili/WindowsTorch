@@ -1,0 +1,44 @@
+rock_manifest = {
+   doc = {
+      ["common.md"] = "8c3f1e28bc6ef2e2b04caf3e94bfbf6d",
+      ["custom.md"] = "fb588004e272ce393d4198b99a0e4611",
+      ["file.md"] = "3073864463d0851ea11cbc9b55220976",
+      ["index.md"] = "cd0a8f4566b75823462228a3dcc46ee0",
+      ["plot3dpoints.md"] = "75eb5be29396c121af491c45b89b44a5",
+      ["plot_filled.png"] = "c8465376497093c7328025e9cc81d7d0",
+      ["plot_hist.png"] = "c69d95ddf9dc814e7700393faba4ab7a",
+      ["plot_imagesc.png"] = "9b6e16267b2ec154528c138fbcafe97b",
+      ["plot_labels.png"] = "9d76bafe110251f25aea8240267a87a7",
+      ["plot_raw.png"] = "cec500ab30a8e25dfee0efaf61a526ee",
+      ["plot_sincos.png"] = "9f27d3bf0b73993519a78d8a417e12d4",
+      ["plot_splot.png"] = "7b5e3a9110359c25f7b850457a66bca7",
+      ["plot_splot2.png"] = "4f287fefa19c3311f77a56fd0d59bfb3",
+      ["plot_x.png"] = "ecc42aaa90b35dd436551f8b33f4540a",
+      ["plot_xyf.png"] = "7c7e7d6a1538bd892ef1fee44096b4b1",
+      ["plothistogram.md"] = "27e6b7bca68166c19c2a9a4f89749433",
+      ["plotline.md"] = "1089d17d68a1b03a23bbb507180ce71e",
+      ["plotmatrix.md"] = "7430440d1eb71f81a6a9502308e11836",
+      ["plotsurface.md"] = "e1746e9dfc88a94dfe8f5478610b3c3d",
+      ["scatter3.png"] = "bed610abbb3b1132270b1a1b9bdbd60d",
+      ["scatter3_helix.png"] = "3246f66d313e521698968d864c621370"
+   },
+   ["gnuplot-scm-1.rockspec"] = "d3945f2f89b28b3c6039aa79fe3f3bd1",
+   lua = {
+      gnuplot = {
+         ["README.md"] = "65bbd5151e96ac0832656a2f1ec6772d",
+         doc = {
+            ["plot_filled.png"] = "c8465376497093c7328025e9cc81d7d0",
+            ["plot_hist.png"] = "c69d95ddf9dc814e7700393faba4ab7a",
+            ["plot_imagesc.png"] = "9b6e16267b2ec154528c138fbcafe97b",
+            ["plot_sincos.png"] = "9f27d3bf0b73993519a78d8a417e12d4",
+            ["plot_splot.png"] = "7b5e3a9110359c25f7b850457a66bca7",
+            ["plot_splot2.png"] = "4f287fefa19c3311f77a56fd0d59bfb3",
+            ["plot_x.png"] = "ecc42aaa90b35dd436551f8b33f4540a",
+            ["plot_xyf.png"] = "7c7e7d6a1538bd892ef1fee44096b4b1"
+         },
+         ["gnuplot.lua"] = "9c5db86d682b829c227765a85272d70e",
+         ["hist.lua"] = "282012009d9a46522441c480d6b0e8f6",
+         ["init.lua"] = "70933d69d2fb08029481b3954b2684e9"
+      }
+   }
+}
