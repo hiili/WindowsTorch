@@ -30,6 +30,21 @@ dependencies = {
          }
       }
    },
+   moses = {
+      ["1.6.1-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
    paths = {
       ["scm-1"] = {
          {
@@ -102,6 +117,12 @@ modules = {
    },
    libtorch = {
       "torch/scm-1"
+   },
+   moses = {
+      "moses/1.6.1-1"
+   },
+   moses_min = {
+      "moses/1.6.1-1"
    },
    paths = {
       "paths/scm-1"
@@ -203,6 +224,19 @@ repository = {
             dependencies = {},
             modules = {
                ffi = "ffi.dll"
+            }
+         }
+      }
+   },
+   moses = {
+      ["1.6.1-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               moses = "moses.lua",
+               moses_min = "moses_min.lua"
             }
          }
       }
