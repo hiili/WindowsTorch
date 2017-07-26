@@ -1,0 +1,23 @@
+rock_manifest = {
+   doc = {
+      ["index.html"] = "11eb76eeb84ed3b799ebeb0aa51ddf9b",
+      ["ldoc.css"] = "e2b04e90ff648f8e00d9d4d458de59d9",
+      topics = {
+         ["tutorial.md.html"] = "e3c3236df73e64ab0b2a929fa8761a16"
+      },
+      ["tutorial.md"] = "fbc9b413a3ca79ea49e2190f6234dee9"
+   },
+   lua = {
+      ["moses.lua"] = "2d537b86ac089768d80057a73af3dc74",
+      ["moses_min.lua"] = "cf1e0fc6f35a0406c790ceac0324afe4"
+   },
+   ["moses-1.6.1-1.rockspec"] = "9492f6296e104b33340e7a928bc0e812",
+   spec = {
+      ["array_spec.lua"] = "2f451e49719ed065242c5046762a4cc1",
+      ["chaining_spec.lua"] = "abc7203317f91405a5bf9f6e54784890",
+      ["func_spec.lua"] = "fefc9e569d5252087cb25b795c10a190",
+      ["import_spec.lua"] = "1445d05f804266df1281eabf4009f66e",
+      ["object_spec.lua"] = "a0d917077ba4c5b783bc837ff3ae1140",
+      ["table_spec.lua"] = "79b1f3bc2b7e26348f3cd0826f1d3469"
+   }
+}
