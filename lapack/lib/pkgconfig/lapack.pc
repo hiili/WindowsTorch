@@ -1,0 +1,9 @@
+libdir=C:/torch/lapack/lib
+includedir=C:/torch/lapack/include
+
+Name: LAPACK
+Description: FORTRAN reference implementation of LAPACK Linear Algebra PACKage
+Version: 3.7.1
+URL: http://www.netlib.org/lapack/
+Libs: -L${libdir} -llapack
+Requires.private: blas
