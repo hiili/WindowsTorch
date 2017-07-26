@@ -45,6 +45,27 @@ dependencies = {
          }
       }
    },
+   nn = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {},
+            name = "luaffi"
+         }, {
+            constraints = {},
+            name = "moses"
+         }
+      }
+   },
    paths = {
       ["scm-1"] = {
          {
@@ -112,6 +133,9 @@ modules = {
    ffi = {
       "luaffi/scm-1"
    },
+   libTHNN = {
+      "nn/scm-1"
+   },
    libpaths = {
       "paths/scm-1"
    },
@@ -123,6 +147,642 @@ modules = {
    },
    moses_min = {
       "moses/1.6.1-1"
+   },
+   nn = {
+      "nn/scm-1"
+   },
+   ["nn.Abs"] = {
+      "nn/scm-1"
+   },
+   ["nn.AbsCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.Add"] = {
+      "nn/scm-1"
+   },
+   ["nn.AddConstant"] = {
+      "nn/scm-1"
+   },
+   ["nn.BCECriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.BatchNormalization"] = {
+      "nn/scm-1"
+   },
+   ["nn.Bilinear"] = {
+      "nn/scm-1"
+   },
+   ["nn.Bottle"] = {
+      "nn/scm-1"
+   },
+   ["nn.CAdd"] = {
+      "nn/scm-1"
+   },
+   ["nn.CAddTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.CDivTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.CMaxTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.CMinTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.CMul"] = {
+      "nn/scm-1"
+   },
+   ["nn.CMulTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.CReLU"] = {
+      "nn/scm-1"
+   },
+   ["nn.CSubTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.Clamp"] = {
+      "nn/scm-1"
+   },
+   ["nn.ClassNLLCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.ClassSimplexCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.Concat"] = {
+      "nn/scm-1"
+   },
+   ["nn.ConcatTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.Container"] = {
+      "nn/scm-1"
+   },
+   ["nn.Contiguous"] = {
+      "nn/scm-1"
+   },
+   ["nn.Copy"] = {
+      "nn/scm-1"
+   },
+   ["nn.Cosine"] = {
+      "nn/scm-1"
+   },
+   ["nn.CosineDistance"] = {
+      "nn/scm-1"
+   },
+   ["nn.CosineEmbeddingCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.Criterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.CriterionTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.CrossEntropyCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.DepthConcat"] = {
+      "nn/scm-1"
+   },
+   ["nn.DistKLDivCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.DistanceRatioCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.DotProduct"] = {
+      "nn/scm-1"
+   },
+   ["nn.Dropout"] = {
+      "nn/scm-1"
+   },
+   ["nn.ELU"] = {
+      "nn/scm-1"
+   },
+   ["nn.ErrorMessages"] = {
+      "nn/scm-1"
+   },
+   ["nn.Euclidean"] = {
+      "nn/scm-1"
+   },
+   ["nn.Exp"] = {
+      "nn/scm-1"
+   },
+   ["nn.FlattenTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.GPU"] = {
+      "nn/scm-1"
+   },
+   ["nn.GatedLinearUnit"] = {
+      "nn/scm-1"
+   },
+   ["nn.GradientReversal"] = {
+      "nn/scm-1"
+   },
+   ["nn.HardShrink"] = {
+      "nn/scm-1"
+   },
+   ["nn.HardTanh"] = {
+      "nn/scm-1"
+   },
+   ["nn.HingeEmbeddingCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.Identity"] = {
+      "nn/scm-1"
+   },
+   ["nn.Index"] = {
+      "nn/scm-1"
+   },
+   ["nn.Jacobian"] = {
+      "nn/scm-1"
+   },
+   ["nn.JoinTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.L1Cost"] = {
+      "nn/scm-1"
+   },
+   ["nn.L1HingeEmbeddingCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.L1Penalty"] = {
+      "nn/scm-1"
+   },
+   ["nn.LeakyReLU"] = {
+      "nn/scm-1"
+   },
+   ["nn.Linear"] = {
+      "nn/scm-1"
+   },
+   ["nn.Log"] = {
+      "nn/scm-1"
+   },
+   ["nn.LogSigmoid"] = {
+      "nn/scm-1"
+   },
+   ["nn.LogSoftMax"] = {
+      "nn/scm-1"
+   },
+   ["nn.LookupTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.MM"] = {
+      "nn/scm-1"
+   },
+   ["nn.MSECriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.MV"] = {
+      "nn/scm-1"
+   },
+   ["nn.MapTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.MarginCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.MarginRankingCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.MaskedSelect"] = {
+      "nn/scm-1"
+   },
+   ["nn.Max"] = {
+      "nn/scm-1"
+   },
+   ["nn.Mean"] = {
+      "nn/scm-1"
+   },
+   ["nn.Min"] = {
+      "nn/scm-1"
+   },
+   ["nn.MixtureTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.Module"] = {
+      "nn/scm-1"
+   },
+   ["nn.Mul"] = {
+      "nn/scm-1"
+   },
+   ["nn.MulConstant"] = {
+      "nn/scm-1"
+   },
+   ["nn.MultiCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.MultiLabelMarginCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.MultiLabelSoftMarginCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.MultiMarginCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.Narrow"] = {
+      "nn/scm-1"
+   },
+   ["nn.NarrowTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.Normalize"] = {
+      "nn/scm-1"
+   },
+   ["nn.PReLU"] = {
+      "nn/scm-1"
+   },
+   ["nn.Padding"] = {
+      "nn/scm-1"
+   },
+   ["nn.PairwiseDistance"] = {
+      "nn/scm-1"
+   },
+   ["nn.Parallel"] = {
+      "nn/scm-1"
+   },
+   ["nn.ParallelCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.ParallelTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.PartialLinear"] = {
+      "nn/scm-1"
+   },
+   ["nn.PixelShuffle"] = {
+      "nn/scm-1"
+   },
+   ["nn.Power"] = {
+      "nn/scm-1"
+   },
+   ["nn.RReLU"] = {
+      "nn/scm-1"
+   },
+   ["nn.ReLU"] = {
+      "nn/scm-1"
+   },
+   ["nn.ReLU6"] = {
+      "nn/scm-1"
+   },
+   ["nn.Replicate"] = {
+      "nn/scm-1"
+   },
+   ["nn.Reshape"] = {
+      "nn/scm-1"
+   },
+   ["nn.Select"] = {
+      "nn/scm-1"
+   },
+   ["nn.SelectTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.Sequential"] = {
+      "nn/scm-1"
+   },
+   ["nn.Sigmoid"] = {
+      "nn/scm-1"
+   },
+   ["nn.SmoothL1Criterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.SoftMarginCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.SoftMax"] = {
+      "nn/scm-1"
+   },
+   ["nn.SoftMin"] = {
+      "nn/scm-1"
+   },
+   ["nn.SoftPlus"] = {
+      "nn/scm-1"
+   },
+   ["nn.SoftShrink"] = {
+      "nn/scm-1"
+   },
+   ["nn.SoftSign"] = {
+      "nn/scm-1"
+   },
+   ["nn.SparseJacobian"] = {
+      "nn/scm-1"
+   },
+   ["nn.SparseLinear"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialAdaptiveAveragePooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialAdaptiveMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialAutoCropMSECriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialAveragePooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialBatchNormalization"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialClassNLLCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialContrastiveNormalization"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialConvolutionLocal"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialConvolutionMM"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialConvolutionMap"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialCrossMapLRN"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialDilatedConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialDilatedMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialDivisiveNormalization"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialDropout"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialFractionalMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialFullConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialFullConvolutionMap"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialLPPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialLogSoftMax"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialMaxUnpooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialReflectionPadding"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialReplicationPadding"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialSoftMax"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialSubSampling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialSubtractiveNormalization"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialUpSamplingBilinear"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialUpSamplingNearest"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialZeroPadding"] = {
+      "nn/scm-1"
+   },
+   ["nn.SplitTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.Sqrt"] = {
+      "nn/scm-1"
+   },
+   ["nn.Square"] = {
+      "nn/scm-1"
+   },
+   ["nn.Squeeze"] = {
+      "nn/scm-1"
+   },
+   ["nn.StochasticGradient"] = {
+      "nn/scm-1"
+   },
+   ["nn.Sum"] = {
+      "nn/scm-1"
+   },
+   ["nn.THNN"] = {
+      "nn/scm-1"
+   },
+   ["nn.THNN_h"] = {
+      "nn/scm-1"
+   },
+   ["nn.Tanh"] = {
+      "nn/scm-1"
+   },
+   ["nn.TanhShrink"] = {
+      "nn/scm-1"
+   },
+   ["nn.TemporalConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.TemporalDynamicKMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.TemporalMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.TemporalRowConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.TemporalSubSampling"] = {
+      "nn/scm-1"
+   },
+   ["nn.Threshold"] = {
+      "nn/scm-1"
+   },
+   ["nn.Transpose"] = {
+      "nn/scm-1"
+   },
+   ["nn.Unsqueeze"] = {
+      "nn/scm-1"
+   },
+   ["nn.View"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricAveragePooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricBatchNormalization"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricDilatedConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricDilatedMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricDropout"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricFractionalMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricFullConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricMaxUnpooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricReplicationPadding"] = {
+      "nn/scm-1"
+   },
+   ["nn.WeightNorm"] = {
+      "nn/scm-1"
+   },
+   ["nn.WeightedEuclidean"] = {
+      "nn/scm-1"
+   },
+   ["nn.WeightedMSECriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.hessian"] = {
+      "nn/scm-1"
+   },
+   ["nn.test"] = {
+      "nn/scm-1"
+   },
+   ["nn.utils"] = {
+      "nn/scm-1"
+   },
+   ["nn/README.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/containers.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/convolution.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/criterion.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/abs.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/elu.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/exp.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/hshrink.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/htanh.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/lena.jpg"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/lenap.jpg"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/logsigmoid.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/logsoftmax.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/power.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/prelu.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/relu.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/relu6.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/rrelu.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/sigmmoid.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/sigmoid.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/softmax.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/softmin.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/softplus.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/softsign.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/sqrt.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/square.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/sshrink.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/tanh.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/index.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/module.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/overview.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/simple.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/table.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/testing.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/training.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/transfer.md"] = {
+      "nn/scm-1"
    },
    paths = {
       "paths/scm-1"
@@ -237,6 +897,236 @@ repository = {
             modules = {
                moses = "moses.lua",
                moses_min = "moses_min.lua"
+            }
+         }
+      }
+   },
+   nn = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               luaffi = "scm-1",
+               moses = "1.6.1-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               libTHNN = "libTHNN.dll",
+               nn = "nn/init.lua",
+               ["nn.Abs"] = "nn/Abs.lua",
+               ["nn.AbsCriterion"] = "nn/AbsCriterion.lua",
+               ["nn.Add"] = "nn/Add.lua",
+               ["nn.AddConstant"] = "nn/AddConstant.lua",
+               ["nn.BCECriterion"] = "nn/BCECriterion.lua",
+               ["nn.BatchNormalization"] = "nn/BatchNormalization.lua",
+               ["nn.Bilinear"] = "nn/Bilinear.lua",
+               ["nn.Bottle"] = "nn/Bottle.lua",
+               ["nn.CAdd"] = "nn/CAdd.lua",
+               ["nn.CAddTable"] = "nn/CAddTable.lua",
+               ["nn.CDivTable"] = "nn/CDivTable.lua",
+               ["nn.CMaxTable"] = "nn/CMaxTable.lua",
+               ["nn.CMinTable"] = "nn/CMinTable.lua",
+               ["nn.CMul"] = "nn/CMul.lua",
+               ["nn.CMulTable"] = "nn/CMulTable.lua",
+               ["nn.CReLU"] = "nn/CReLU.lua",
+               ["nn.CSubTable"] = "nn/CSubTable.lua",
+               ["nn.Clamp"] = "nn/Clamp.lua",
+               ["nn.ClassNLLCriterion"] = "nn/ClassNLLCriterion.lua",
+               ["nn.ClassSimplexCriterion"] = "nn/ClassSimplexCriterion.lua",
+               ["nn.Concat"] = "nn/Concat.lua",
+               ["nn.ConcatTable"] = "nn/ConcatTable.lua",
+               ["nn.Container"] = "nn/Container.lua",
+               ["nn.Contiguous"] = "nn/Contiguous.lua",
+               ["nn.Copy"] = "nn/Copy.lua",
+               ["nn.Cosine"] = "nn/Cosine.lua",
+               ["nn.CosineDistance"] = "nn/CosineDistance.lua",
+               ["nn.CosineEmbeddingCriterion"] = "nn/CosineEmbeddingCriterion.lua",
+               ["nn.Criterion"] = "nn/Criterion.lua",
+               ["nn.CriterionTable"] = "nn/CriterionTable.lua",
+               ["nn.CrossEntropyCriterion"] = "nn/CrossEntropyCriterion.lua",
+               ["nn.DepthConcat"] = "nn/DepthConcat.lua",
+               ["nn.DistKLDivCriterion"] = "nn/DistKLDivCriterion.lua",
+               ["nn.DistanceRatioCriterion"] = "nn/DistanceRatioCriterion.lua",
+               ["nn.DotProduct"] = "nn/DotProduct.lua",
+               ["nn.Dropout"] = "nn/Dropout.lua",
+               ["nn.ELU"] = "nn/ELU.lua",
+               ["nn.ErrorMessages"] = "nn/ErrorMessages.lua",
+               ["nn.Euclidean"] = "nn/Euclidean.lua",
+               ["nn.Exp"] = "nn/Exp.lua",
+               ["nn.FlattenTable"] = "nn/FlattenTable.lua",
+               ["nn.GPU"] = "nn/GPU.lua",
+               ["nn.GatedLinearUnit"] = "nn/GatedLinearUnit.lua",
+               ["nn.GradientReversal"] = "nn/GradientReversal.lua",
+               ["nn.HardShrink"] = "nn/HardShrink.lua",
+               ["nn.HardTanh"] = "nn/HardTanh.lua",
+               ["nn.HingeEmbeddingCriterion"] = "nn/HingeEmbeddingCriterion.lua",
+               ["nn.Identity"] = "nn/Identity.lua",
+               ["nn.Index"] = "nn/Index.lua",
+               ["nn.Jacobian"] = "nn/Jacobian.lua",
+               ["nn.JoinTable"] = "nn/JoinTable.lua",
+               ["nn.L1Cost"] = "nn/L1Cost.lua",
+               ["nn.L1HingeEmbeddingCriterion"] = "nn/L1HingeEmbeddingCriterion.lua",
+               ["nn.L1Penalty"] = "nn/L1Penalty.lua",
+               ["nn.LeakyReLU"] = "nn/LeakyReLU.lua",
+               ["nn.Linear"] = "nn/Linear.lua",
+               ["nn.Log"] = "nn/Log.lua",
+               ["nn.LogSigmoid"] = "nn/LogSigmoid.lua",
+               ["nn.LogSoftMax"] = "nn/LogSoftMax.lua",
+               ["nn.LookupTable"] = "nn/LookupTable.lua",
+               ["nn.MM"] = "nn/MM.lua",
+               ["nn.MSECriterion"] = "nn/MSECriterion.lua",
+               ["nn.MV"] = "nn/MV.lua",
+               ["nn.MapTable"] = "nn/MapTable.lua",
+               ["nn.MarginCriterion"] = "nn/MarginCriterion.lua",
+               ["nn.MarginRankingCriterion"] = "nn/MarginRankingCriterion.lua",
+               ["nn.MaskedSelect"] = "nn/MaskedSelect.lua",
+               ["nn.Max"] = "nn/Max.lua",
+               ["nn.Mean"] = "nn/Mean.lua",
+               ["nn.Min"] = "nn/Min.lua",
+               ["nn.MixtureTable"] = "nn/MixtureTable.lua",
+               ["nn.Module"] = "nn/Module.lua",
+               ["nn.Mul"] = "nn/Mul.lua",
+               ["nn.MulConstant"] = "nn/MulConstant.lua",
+               ["nn.MultiCriterion"] = "nn/MultiCriterion.lua",
+               ["nn.MultiLabelMarginCriterion"] = "nn/MultiLabelMarginCriterion.lua",
+               ["nn.MultiLabelSoftMarginCriterion"] = "nn/MultiLabelSoftMarginCriterion.lua",
+               ["nn.MultiMarginCriterion"] = "nn/MultiMarginCriterion.lua",
+               ["nn.Narrow"] = "nn/Narrow.lua",
+               ["nn.NarrowTable"] = "nn/NarrowTable.lua",
+               ["nn.Normalize"] = "nn/Normalize.lua",
+               ["nn.PReLU"] = "nn/PReLU.lua",
+               ["nn.Padding"] = "nn/Padding.lua",
+               ["nn.PairwiseDistance"] = "nn/PairwiseDistance.lua",
+               ["nn.Parallel"] = "nn/Parallel.lua",
+               ["nn.ParallelCriterion"] = "nn/ParallelCriterion.lua",
+               ["nn.ParallelTable"] = "nn/ParallelTable.lua",
+               ["nn.PartialLinear"] = "nn/PartialLinear.lua",
+               ["nn.PixelShuffle"] = "nn/PixelShuffle.lua",
+               ["nn.Power"] = "nn/Power.lua",
+               ["nn.RReLU"] = "nn/RReLU.lua",
+               ["nn.ReLU"] = "nn/ReLU.lua",
+               ["nn.ReLU6"] = "nn/ReLU6.lua",
+               ["nn.Replicate"] = "nn/Replicate.lua",
+               ["nn.Reshape"] = "nn/Reshape.lua",
+               ["nn.Select"] = "nn/Select.lua",
+               ["nn.SelectTable"] = "nn/SelectTable.lua",
+               ["nn.Sequential"] = "nn/Sequential.lua",
+               ["nn.Sigmoid"] = "nn/Sigmoid.lua",
+               ["nn.SmoothL1Criterion"] = "nn/SmoothL1Criterion.lua",
+               ["nn.SoftMarginCriterion"] = "nn/SoftMarginCriterion.lua",
+               ["nn.SoftMax"] = "nn/SoftMax.lua",
+               ["nn.SoftMin"] = "nn/SoftMin.lua",
+               ["nn.SoftPlus"] = "nn/SoftPlus.lua",
+               ["nn.SoftShrink"] = "nn/SoftShrink.lua",
+               ["nn.SoftSign"] = "nn/SoftSign.lua",
+               ["nn.SparseJacobian"] = "nn/SparseJacobian.lua",
+               ["nn.SparseLinear"] = "nn/SparseLinear.lua",
+               ["nn.SpatialAdaptiveAveragePooling"] = "nn/SpatialAdaptiveAveragePooling.lua",
+               ["nn.SpatialAdaptiveMaxPooling"] = "nn/SpatialAdaptiveMaxPooling.lua",
+               ["nn.SpatialAutoCropMSECriterion"] = "nn/SpatialAutoCropMSECriterion.lua",
+               ["nn.SpatialAveragePooling"] = "nn/SpatialAveragePooling.lua",
+               ["nn.SpatialBatchNormalization"] = "nn/SpatialBatchNormalization.lua",
+               ["nn.SpatialClassNLLCriterion"] = "nn/SpatialClassNLLCriterion.lua",
+               ["nn.SpatialContrastiveNormalization"] = "nn/SpatialContrastiveNormalization.lua",
+               ["nn.SpatialConvolution"] = "nn/SpatialConvolution.lua",
+               ["nn.SpatialConvolutionLocal"] = "nn/SpatialConvolutionLocal.lua",
+               ["nn.SpatialConvolutionMM"] = "nn/SpatialConvolutionMM.lua",
+               ["nn.SpatialConvolutionMap"] = "nn/SpatialConvolutionMap.lua",
+               ["nn.SpatialCrossMapLRN"] = "nn/SpatialCrossMapLRN.lua",
+               ["nn.SpatialDilatedConvolution"] = "nn/SpatialDilatedConvolution.lua",
+               ["nn.SpatialDilatedMaxPooling"] = "nn/SpatialDilatedMaxPooling.lua",
+               ["nn.SpatialDivisiveNormalization"] = "nn/SpatialDivisiveNormalization.lua",
+               ["nn.SpatialDropout"] = "nn/SpatialDropout.lua",
+               ["nn.SpatialFractionalMaxPooling"] = "nn/SpatialFractionalMaxPooling.lua",
+               ["nn.SpatialFullConvolution"] = "nn/SpatialFullConvolution.lua",
+               ["nn.SpatialFullConvolutionMap"] = "nn/SpatialFullConvolutionMap.lua",
+               ["nn.SpatialLPPooling"] = "nn/SpatialLPPooling.lua",
+               ["nn.SpatialLogSoftMax"] = "nn/SpatialLogSoftMax.lua",
+               ["nn.SpatialMaxPooling"] = "nn/SpatialMaxPooling.lua",
+               ["nn.SpatialMaxUnpooling"] = "nn/SpatialMaxUnpooling.lua",
+               ["nn.SpatialReflectionPadding"] = "nn/SpatialReflectionPadding.lua",
+               ["nn.SpatialReplicationPadding"] = "nn/SpatialReplicationPadding.lua",
+               ["nn.SpatialSoftMax"] = "nn/SpatialSoftMax.lua",
+               ["nn.SpatialSubSampling"] = "nn/SpatialSubSampling.lua",
+               ["nn.SpatialSubtractiveNormalization"] = "nn/SpatialSubtractiveNormalization.lua",
+               ["nn.SpatialUpSamplingBilinear"] = "nn/SpatialUpSamplingBilinear.lua",
+               ["nn.SpatialUpSamplingNearest"] = "nn/SpatialUpSamplingNearest.lua",
+               ["nn.SpatialZeroPadding"] = "nn/SpatialZeroPadding.lua",
+               ["nn.SplitTable"] = "nn/SplitTable.lua",
+               ["nn.Sqrt"] = "nn/Sqrt.lua",
+               ["nn.Square"] = "nn/Square.lua",
+               ["nn.Squeeze"] = "nn/Squeeze.lua",
+               ["nn.StochasticGradient"] = "nn/StochasticGradient.lua",
+               ["nn.Sum"] = "nn/Sum.lua",
+               ["nn.THNN"] = "nn/THNN.lua",
+               ["nn.THNN_h"] = "nn/THNN_h.lua",
+               ["nn.Tanh"] = "nn/Tanh.lua",
+               ["nn.TanhShrink"] = "nn/TanhShrink.lua",
+               ["nn.TemporalConvolution"] = "nn/TemporalConvolution.lua",
+               ["nn.TemporalDynamicKMaxPooling"] = "nn/TemporalDynamicKMaxPooling.lua",
+               ["nn.TemporalMaxPooling"] = "nn/TemporalMaxPooling.lua",
+               ["nn.TemporalRowConvolution"] = "nn/TemporalRowConvolution.lua",
+               ["nn.TemporalSubSampling"] = "nn/TemporalSubSampling.lua",
+               ["nn.Threshold"] = "nn/Threshold.lua",
+               ["nn.Transpose"] = "nn/Transpose.lua",
+               ["nn.Unsqueeze"] = "nn/Unsqueeze.lua",
+               ["nn.View"] = "nn/View.lua",
+               ["nn.VolumetricAveragePooling"] = "nn/VolumetricAveragePooling.lua",
+               ["nn.VolumetricBatchNormalization"] = "nn/VolumetricBatchNormalization.lua",
+               ["nn.VolumetricConvolution"] = "nn/VolumetricConvolution.lua",
+               ["nn.VolumetricDilatedConvolution"] = "nn/VolumetricDilatedConvolution.lua",
+               ["nn.VolumetricDilatedMaxPooling"] = "nn/VolumetricDilatedMaxPooling.lua",
+               ["nn.VolumetricDropout"] = "nn/VolumetricDropout.lua",
+               ["nn.VolumetricFractionalMaxPooling"] = "nn/VolumetricFractionalMaxPooling.lua",
+               ["nn.VolumetricFullConvolution"] = "nn/VolumetricFullConvolution.lua",
+               ["nn.VolumetricMaxPooling"] = "nn/VolumetricMaxPooling.lua",
+               ["nn.VolumetricMaxUnpooling"] = "nn/VolumetricMaxUnpooling.lua",
+               ["nn.VolumetricReplicationPadding"] = "nn/VolumetricReplicationPadding.lua",
+               ["nn.WeightNorm"] = "nn/WeightNorm.lua",
+               ["nn.WeightedEuclidean"] = "nn/WeightedEuclidean.lua",
+               ["nn.WeightedMSECriterion"] = "nn/WeightedMSECriterion.lua",
+               ["nn.hessian"] = "nn/hessian.lua",
+               ["nn.test"] = "nn/test.lua",
+               ["nn.utils"] = "nn/utils.lua",
+               ["nn/README.md"] = "nn/README.md",
+               ["nn/doc/containers.md"] = "nn/doc/containers.md",
+               ["nn/doc/convolution.md"] = "nn/doc/convolution.md",
+               ["nn/doc/criterion.md"] = "nn/doc/criterion.md",
+               ["nn/doc/image/abs.png"] = "nn/doc/image/abs.png",
+               ["nn/doc/image/elu.png"] = "nn/doc/image/elu.png",
+               ["nn/doc/image/exp.png"] = "nn/doc/image/exp.png",
+               ["nn/doc/image/hshrink.png"] = "nn/doc/image/hshrink.png",
+               ["nn/doc/image/htanh.png"] = "nn/doc/image/htanh.png",
+               ["nn/doc/image/lena.jpg"] = "nn/doc/image/lena.jpg",
+               ["nn/doc/image/lenap.jpg"] = "nn/doc/image/lenap.jpg",
+               ["nn/doc/image/logsigmoid.png"] = "nn/doc/image/logsigmoid.png",
+               ["nn/doc/image/logsoftmax.png"] = "nn/doc/image/logsoftmax.png",
+               ["nn/doc/image/power.png"] = "nn/doc/image/power.png",
+               ["nn/doc/image/prelu.png"] = "nn/doc/image/prelu.png",
+               ["nn/doc/image/relu.png"] = "nn/doc/image/relu.png",
+               ["nn/doc/image/relu6.png"] = "nn/doc/image/relu6.png",
+               ["nn/doc/image/rrelu.png"] = "nn/doc/image/rrelu.png",
+               ["nn/doc/image/sigmmoid.png"] = "nn/doc/image/sigmmoid.png",
+               ["nn/doc/image/sigmoid.png"] = "nn/doc/image/sigmoid.png",
+               ["nn/doc/image/softmax.png"] = "nn/doc/image/softmax.png",
+               ["nn/doc/image/softmin.png"] = "nn/doc/image/softmin.png",
+               ["nn/doc/image/softplus.png"] = "nn/doc/image/softplus.png",
+               ["nn/doc/image/softsign.png"] = "nn/doc/image/softsign.png",
+               ["nn/doc/image/sqrt.png"] = "nn/doc/image/sqrt.png",
+               ["nn/doc/image/square.png"] = "nn/doc/image/square.png",
+               ["nn/doc/image/sshrink.png"] = "nn/doc/image/sshrink.png",
+               ["nn/doc/image/tanh.png"] = "nn/doc/image/tanh.png",
+               ["nn/doc/index.md"] = "nn/doc/index.md",
+               ["nn/doc/module.md"] = "nn/doc/module.md",
+               ["nn/doc/overview.md"] = "nn/doc/overview.md",
+               ["nn/doc/simple.md"] = "nn/doc/simple.md",
+               ["nn/doc/table.md"] = "nn/doc/table.md",
+               ["nn/doc/testing.md"] = "nn/doc/testing.md",
+               ["nn/doc/training.md"] = "nn/doc/training.md",
+               ["nn/doc/transfer.md"] = "nn/doc/transfer.md"
             }
          }
       }
