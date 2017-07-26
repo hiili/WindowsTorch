@@ -1,0 +1,43 @@
+rock_manifest = {
+   doc = {
+      ["colorspace.md"] = "41934e251e8e35926c1139f3371b59ae",
+      ["drawing.md"] = "c2b2ac72a9f795818c4b8bdbe93fa997",
+      ["gui.md"] = "f003cfbaf06df86dec893f69af59e9d4",
+      ["index.md"] = "a14326ee72bb516479fecc52baca8ca5",
+      ["paramtransform.md"] = "f611e88cff0080a92ec5a4e5c8e64149",
+      ["saveload.md"] = "de6665ca3545a134ef1f295299f66a8a",
+      ["simpletransform.md"] = "513d7bae7216107b9f31d994b48bd57a",
+      ["tensorconstruct.md"] = "48ab1515812180b7b096f8c009d90759"
+   },
+   ["image-1.1.alpha-0.rockspec"] = "f7c4e59478577feb21c3174e729f54bd",
+   lib = {
+      ["libimage.dll"] = "0fb6a351fa3dbf1f7e82d72a5d4e45a7",
+      ["libppm.dll"] = "1d60ed32dd0eac28633ec56b34593add"
+   },
+   lua = {
+      image = {
+         ["README.md"] = "9b369b957fbd50f36bc5270591ae7676",
+         assets = {
+            ["P2.pgm"] = "fdbe8f1c31dd1312112e379391e0331c",
+            ["P4.pbm"] = "1f133396f53f445d5f5ed3a52f0d314e",
+            ["P5.pgm"] = "8e046c7a91474c66a38c6388480c4806",
+            ["P6.ppm"] = "a7af606ac2fb3a71e7a8c690354e05c1",
+            ["bmp-without-ext"] = "7ef95648df5e33e4167baa6d554132fa",
+            ["corrupt-ihdr.png"] = "524d443ad8b1a2ba6cbf64a53ce0b779",
+            ["fabio.jpg"] = "766d01be7046973350c05e13b898589b",
+            ["fabio.png"] = "18a4c89e35d7841297759119a4337205",
+            ["foobar.png"] = "473249da7d89406a748fcdbdfcfd8e8c",
+            ["grace_hopper_512.jpg"] = "83a0c3709c4552ebf810b13d181135c1",
+            ["grace_hopper_512.png"] = "12663f3eb994fbf36e8905ec51868de6",
+            ["gray16-1x2.png"] = "c1374bd5993fbbd2c36f93e71eb4c49f",
+            ["gray3x1.png"] = "cd4f6cf3240e85aa42d5192875af9a60",
+            ["rectangle.png"] = "b9d52be67a6a3a1ad51ea4ebe3ece15c",
+            ["rgb16-2x1.png"] = "09993c35bf4a05a1888a05fc0dbca3cf",
+            ["rgb2x1.png"] = "d9889d76fd9c1b7054006db9083ee507"
+         },
+         ["init.lua"] = "6e6a2eff45a4bc1e83c372cca27e1cad",
+         ["test.lua"] = "f837a5bdff6713cb10afa364aa183134",
+         ["win.ui"] = "a4c66247f5193c7c0a733b4502ed4e8d"
+      }
+   }
+}

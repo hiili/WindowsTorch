@@ -1,0 +1,61 @@
+rock_manifest = {
+   doc = {
+      image = {
+         ["Lenna-150x150-bilinear.png"] = "b872f5b061552f3c5300eda1f4777d90",
+         ["Lenna.png"] = "814a0034f5549e957ee61360d87457e5"
+      }
+   },
+   lib = {
+      ["libnnx.dll"] = "d0bb230365e6a8e35c2a10c59d6d3121"
+   },
+   lua = {
+      nnx = {
+         ["Balance.lua"] = "13923300b513b76d859434b87abffbdb",
+         ["CTCCriterion.lua"] = "5e4abd27e319b54d906272bd693e8b6b",
+         ["DataList.lua"] = "02a58f684f32897352a208f7bd609f57",
+         ["DataSet.lua"] = "662c6bcd59b89dca9dc33af5ff0721a4",
+         ["DataSetLabelMe.lua"] = "e1002f6ccaf95f23a23f6844fbffd3af",
+         ["DataSetSamplingPascal.lua"] = "148431371ca9c8f069e3913f17f7ff51",
+         ["DistMarginCriterion.lua"] = "6f4d732abf083326b8f38af665cefd3a",
+         ["DistNLLCriterion.lua"] = "514c998f2b749cabfbd559e92c0c4bc5",
+         ["FunctionWrapper.lua"] = "0532864c6913c308871516b771f4beb0",
+         ["LA.lua"] = "2a424225db4aa0df2fcb4f3a50b62bdf",
+         ["Minus.lua"] = "78221ec4162198bbc1b5883118058685",
+         ["MultiSoftMax.lua"] = "3b5845dfbdf86532956fa6ea334d6553",
+         ["PixelSort.lua"] = "f445019aa654c152d099e8682bfa48b4",
+         ["Probe.lua"] = "fd277ddc0a527a0618013597256245d1",
+         ["PullTable.lua"] = "0b5fd3ed4c661e8c70aaa9ea6b50030b",
+         ["PushTable.lua"] = "bfbcf9c2a0da6c7298555134e8930cce",
+         ["QDRiemaNNLinear.lua"] = "212e89bebc7a709af96e5be9aa52e7b9",
+         ["SaturatedLU.lua"] = "5a96843f465b7812adb999657cdfb89d",
+         ["SoftMaxForest.lua"] = "301587e5a0a32082e752f0be38fc3f73",
+         ["SoftMaxTree.lua"] = "323acb60c12831894fcf6daf8bdf230a",
+         ["SparseCriterion.lua"] = "1ff0c550a8d5a8676d493d08fb803bc8",
+         ["SpatialClassifier.lua"] = "dd032b8a3fbe734d4dd2fbfbf1ea3c00",
+         ["SpatialColorTransform.lua"] = "e7d837ec075163dd3828e6ba7e4e844b",
+         ["SpatialDownSampling.lua"] = "efcdd1e2fe016647ea9538d097e2261d",
+         ["SpatialFovea.lua"] = "eca3413db92087c42c902ef3b6c86aee",
+         ["SpatialGraph.lua"] = "088ed6362d57ba38abe5ef83ef0a0d6c",
+         ["SpatialLinear.lua"] = "868e35eb220b959f678a675a159b8930",
+         ["SpatialMatching.lua"] = "35702e41611bb22481da59ddb1c302a7",
+         ["SpatialMaxSampling.lua"] = "3df5f0e78dfe77dcbcbfe0aa33ea5478",
+         ["SpatialNormalization.lua"] = "249669767b8c1aaf1b34efa23fcb84a1",
+         ["SpatialPadding.lua"] = "8bc427ce097e3324ccbbf9447d8a8d97",
+         ["SpatialPyramid.lua"] = "a7fc7eb22428984f35abb1bba044fbc3",
+         ["SpatialRadialMatching.lua"] = "5e5aece296244c9bb4c0e8e6ebb3a713",
+         ["SpatialReSampling.lua"] = "b7e45cbeb7ca2656dba78c76cceb6b54",
+         ["SpatialReSamplingEx.lua"] = "1db7f5d84b4388ddb3be097fc8e24ab7",
+         ["SpatialRecursiveFovea.lua"] = "e8b8dc6ab9a487be60e816fa9ddfdc69",
+         ["SpatialSparseCriterion.lua"] = "ac35cacb7f153dbf8de9b5cffbf975f5",
+         ["SpatialUpSampling.lua"] = "6cae02326e62b602a71e0074a3abaaae",
+         ["SuperCriterion.lua"] = "301c6ef5fea45ec31092616a4a49550d",
+         ["Tic.lua"] = "4c148c3e446c0d4c45023cb996604a67",
+         ["Toc.lua"] = "bbef92f58982bcbae6905e64f83acd97",
+         ["TreeNLLCriterion.lua"] = "6545c000b5b919e064e7168bd6cda14b",
+         ["init.lua"] = "e093749bca6f563fe2007276f4ecdb7c",
+         ["test-all.lua"] = "7961a6b13e2a9439c2f132308ac327ec",
+         ["test-omp.lua"] = "c2491a1b912c93d39f7e54ed35f2f1d8"
+      }
+   },
+   ["nnx-0.1-1.rockspec"] = "ea099dbff56f1213b18d25f0543fb2cc"
+}

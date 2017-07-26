@@ -1,4 +1,8 @@
-commands = {}
+commands = {
+   mdcat = {
+      "sundown/scm-1"
+   }
+}
 dependencies = {
    cwrap = {
       ["scm-1"] = {
@@ -15,6 +19,31 @@ dependencies = {
          }
       }
    },
+   dok = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "sundown"
+         }
+      }
+   },
    fun = {
       ["scm-1"] = {
          {
@@ -23,8 +52,111 @@ dependencies = {
          }
       }
    },
+   gnuplot = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "paths"
+         }
+      }
+   },
+   image = {
+      ["1.1.alpha-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "sys"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "xlua"
+         }, {
+            constraints = {},
+            name = "dok"
+         }
+      }
+   },
+   inspect = {
+      ["3.1.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
    luaffi = {
       ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   luafilesystem = {
+      ["1.6.3-2"] = {
          {
             constraints = {
                {
@@ -74,6 +206,46 @@ dependencies = {
          }
       }
    },
+   nnx = {
+      ["0.1-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "xlua"
+         }
+      }
+   },
+   optim = {
+      ["1.0.5-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }
+      }
+   },
    paths = {
       ["scm-1"] = {
          {
@@ -86,6 +258,47 @@ dependencies = {
                }
             },
             name = "lua"
+         }
+      }
+   },
+   penlight = {
+      ["1.5.4-1"] = {
+         {
+            constraints = {},
+            name = "luafilesystem"
+         }
+      }
+   },
+   strict = {
+      ["0-0"] = {}
+   },
+   sundown = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   sys = {
+      ["1.1-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
          }
       }
    },
@@ -123,6 +336,31 @@ dependencies = {
             name = "cwrap"
          }
       }
+   },
+   xlua = {
+      ["1.1-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "sys"
+         }
+      }
    }
 }
 modules = {
@@ -138,17 +376,140 @@ modules = {
    ["cwrap/README.md"] = {
       "cwrap/scm-1"
    },
+   dok = {
+      "dok/scm-1"
+   },
+   ["dok.inline"] = {
+      "dok/scm-1"
+   },
    ffi = {
       "luaffi/scm-1"
    },
    fun = {
       "fun/scm-1"
    },
+   gnuplot = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot.gnuplot"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot.hist"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/README.md"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_filled.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_hist.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_imagesc.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_sincos.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_splot.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_splot2.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_x.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_xyf.png"] = {
+      "gnuplot/scm-1"
+   },
+   image = {
+      "image/1.1.alpha-0"
+   },
+   ["image.test"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/README.md"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/P2.pgm"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/P4.pbm"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/P5.pgm"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/P6.ppm"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/bmp-without-ext"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/corrupt-ihdr.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/fabio.jpg"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/fabio.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/foobar.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/grace_hopper_512.jpg"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/grace_hopper_512.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/gray16-1x2.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/gray3x1.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/rectangle.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/rgb16-2x1.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/rgb2x1.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/win.ui"] = {
+      "image/1.1.alpha-0"
+   },
+   inspect = {
+      "inspect/3.1.0-1"
+   },
+   lfs = {
+      "luafilesystem/1.6.3-2"
+   },
    libTHNN = {
       "nn/scm-1"
    },
+   libimage = {
+      "image/1.1.alpha-0"
+   },
+   libnnx = {
+      "nnx/0.1-1"
+   },
    libpaths = {
       "paths/scm-1"
+   },
+   libppm = {
+      "image/1.1.alpha-0"
+   },
+   libsundown = {
+      "sundown/scm-1"
+   },
+   libsys = {
+      "sys/1.1-0"
    },
    libtorch = {
       "torch/scm-1"
@@ -795,8 +1156,374 @@ modules = {
    ["nn/doc/transfer.md"] = {
       "nn/scm-1"
    },
+   nnx = {
+      "nnx/0.1-1"
+   },
+   ["nnx.Balance"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.CTCCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.DataList"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.DataSet"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.DataSetLabelMe"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.DataSetSamplingPascal"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.DistMarginCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.DistNLLCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.FunctionWrapper"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.LA"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.Minus"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.MultiSoftMax"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.PixelSort"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.Probe"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.PullTable"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.PushTable"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.QDRiemaNNLinear"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SaturatedLU"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SoftMaxForest"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SoftMaxTree"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SparseCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialClassifier"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialColorTransform"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialDownSampling"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialFovea"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialGraph"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialLinear"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialMatching"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialMaxSampling"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialNormalization"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialPadding"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialPyramid"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialRadialMatching"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialReSampling"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialReSamplingEx"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialRecursiveFovea"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialSparseCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialUpSampling"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SuperCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.Tic"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.Toc"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.TreeNLLCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.test-all"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.test-omp"] = {
+      "nnx/0.1-1"
+   },
+   optim = {
+      "optim/1.0.5-0"
+   },
+   ["optim.ConfusionMatrix"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.Logger"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.adadelta"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.adagrad"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.adam"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.adamax"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.asgd"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.cg"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.checkgrad"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.cmaes"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.de"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.fista"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.lbfgs"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.lswolfe"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.nag"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.polyinterp"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.rmsprop"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.rprop"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.sgd"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim/README.md"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim/doc/algos.md"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim/doc/image/parameterflattening.png"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim/doc/image/parameterflattening.svg"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim/doc/image/parameterflattening.svg.png"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim/doc/intro.md"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim/doc/logger.md"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim/doc/logger_plot.png"] = {
+      "optim/1.0.5-0"
+   },
    paths = {
       "paths/scm-1"
+   },
+   pl = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.Date"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.List"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.Map"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.MultiMap"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.OrderedMap"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.Set"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.app"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.array2d"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.class"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.compat"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.comprehension"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.config"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.data"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.dir"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.file"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.func"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.import_into"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.input"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.lapp"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.lexer"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.luabalanced"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.operator"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.path"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.permute"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.pretty"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.seq"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.sip"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.strict"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.stringio"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.stringx"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.tablex"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.template"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.test"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.text"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.types"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.url"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.utils"] = {
+      "penlight/1.5.4-1"
+   },
+   ["pl.xml"] = {
+      "penlight/1.5.4-1"
+   },
+   strict = {
+      "strict/0-0"
+   },
+   sundown = {
+      "sundown/scm-1"
+   },
+   ["sundown.ascii"] = {
+      "sundown/scm-1"
+   },
+   ["sundown.env"] = {
+      "sundown/scm-1"
+   },
+   ["sundown.html"] = {
+      "sundown/scm-1"
+   },
+   ["sundown.htmlcdefs"] = {
+      "sundown/scm-1"
+   },
+   ["sundown.sdcdefs"] = {
+      "sundown/scm-1"
+   },
+   sys = {
+      "sys/1.1-0"
+   },
+   ["sys.colors"] = {
+      "sys/1.1-0"
+   },
+   ["sys.fpath"] = {
+      "sys/1.1-0"
    },
    torch = {
       "torch/scm-1"
@@ -869,6 +1596,15 @@ modules = {
    },
    ["torch/doc/utility.md"] = {
       "torch/scm-1"
+   },
+   xlua = {
+      "xlua/1.1-0"
+   },
+   ["xlua.OptionParser"] = {
+      "xlua/1.1-0"
+   },
+   ["xlua.Profiler"] = {
+      "xlua/1.1-0"
    }
 }
 repository = {
@@ -887,6 +1623,21 @@ repository = {
          }
       }
    },
+   dok = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               sundown = "scm-1"
+            },
+            modules = {
+               dok = "dok/init.lua",
+               ["dok.inline"] = "dok/inline.lua"
+            }
+         }
+      }
+   },
    fun = {
       ["scm-1"] = {
          {
@@ -899,6 +1650,86 @@ repository = {
          }
       }
    },
+   gnuplot = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               gnuplot = "gnuplot/init.lua",
+               ["gnuplot.gnuplot"] = "gnuplot/gnuplot.lua",
+               ["gnuplot.hist"] = "gnuplot/hist.lua",
+               ["gnuplot/README.md"] = "gnuplot/README.md",
+               ["gnuplot/doc/plot_filled.png"] = "gnuplot/doc/plot_filled.png",
+               ["gnuplot/doc/plot_hist.png"] = "gnuplot/doc/plot_hist.png",
+               ["gnuplot/doc/plot_imagesc.png"] = "gnuplot/doc/plot_imagesc.png",
+               ["gnuplot/doc/plot_sincos.png"] = "gnuplot/doc/plot_sincos.png",
+               ["gnuplot/doc/plot_splot.png"] = "gnuplot/doc/plot_splot.png",
+               ["gnuplot/doc/plot_splot2.png"] = "gnuplot/doc/plot_splot2.png",
+               ["gnuplot/doc/plot_x.png"] = "gnuplot/doc/plot_x.png",
+               ["gnuplot/doc/plot_xyf.png"] = "gnuplot/doc/plot_xyf.png"
+            }
+         }
+      }
+   },
+   image = {
+      ["1.1.alpha-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               dok = "scm-1",
+               paths = "scm-1",
+               sundown = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1",
+               xlua = "1.1-0"
+            },
+            modules = {
+               image = "image/init.lua",
+               ["image.test"] = "image/test.lua",
+               ["image/README.md"] = "image/README.md",
+               ["image/assets/P2.pgm"] = "image/assets/P2.pgm",
+               ["image/assets/P4.pbm"] = "image/assets/P4.pbm",
+               ["image/assets/P5.pgm"] = "image/assets/P5.pgm",
+               ["image/assets/P6.ppm"] = "image/assets/P6.ppm",
+               ["image/assets/bmp-without-ext"] = "image/assets/bmp-without-ext",
+               ["image/assets/corrupt-ihdr.png"] = "image/assets/corrupt-ihdr.png",
+               ["image/assets/fabio.jpg"] = "image/assets/fabio.jpg",
+               ["image/assets/fabio.png"] = "image/assets/fabio.png",
+               ["image/assets/foobar.png"] = "image/assets/foobar.png",
+               ["image/assets/grace_hopper_512.jpg"] = "image/assets/grace_hopper_512.jpg",
+               ["image/assets/grace_hopper_512.png"] = "image/assets/grace_hopper_512.png",
+               ["image/assets/gray16-1x2.png"] = "image/assets/gray16-1x2.png",
+               ["image/assets/gray3x1.png"] = "image/assets/gray3x1.png",
+               ["image/assets/rectangle.png"] = "image/assets/rectangle.png",
+               ["image/assets/rgb16-2x1.png"] = "image/assets/rgb16-2x1.png",
+               ["image/assets/rgb2x1.png"] = "image/assets/rgb2x1.png",
+               ["image/win.ui"] = "image/win.ui",
+               libimage = "libimage.dll",
+               libppm = "libppm.dll"
+            }
+         }
+      }
+   },
+   inspect = {
+      ["3.1.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               inspect = "inspect.lua"
+            }
+         }
+      }
+   },
    luaffi = {
       ["scm-1"] = {
          {
@@ -907,6 +1738,18 @@ repository = {
             dependencies = {},
             modules = {
                ffi = "ffi.dll"
+            }
+         }
+      }
+   },
+   luafilesystem = {
+      ["1.6.3-2"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               lfs = "lfs.dll"
             }
          }
       }
@@ -1154,6 +1997,112 @@ repository = {
          }
       }
    },
+   nnx = {
+      ["0.1-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1",
+               xlua = "1.1-0"
+            },
+            modules = {
+               libnnx = "libnnx.dll",
+               nnx = "nnx/init.lua",
+               ["nnx.Balance"] = "nnx/Balance.lua",
+               ["nnx.CTCCriterion"] = "nnx/CTCCriterion.lua",
+               ["nnx.DataList"] = "nnx/DataList.lua",
+               ["nnx.DataSet"] = "nnx/DataSet.lua",
+               ["nnx.DataSetLabelMe"] = "nnx/DataSetLabelMe.lua",
+               ["nnx.DataSetSamplingPascal"] = "nnx/DataSetSamplingPascal.lua",
+               ["nnx.DistMarginCriterion"] = "nnx/DistMarginCriterion.lua",
+               ["nnx.DistNLLCriterion"] = "nnx/DistNLLCriterion.lua",
+               ["nnx.FunctionWrapper"] = "nnx/FunctionWrapper.lua",
+               ["nnx.LA"] = "nnx/LA.lua",
+               ["nnx.Minus"] = "nnx/Minus.lua",
+               ["nnx.MultiSoftMax"] = "nnx/MultiSoftMax.lua",
+               ["nnx.PixelSort"] = "nnx/PixelSort.lua",
+               ["nnx.Probe"] = "nnx/Probe.lua",
+               ["nnx.PullTable"] = "nnx/PullTable.lua",
+               ["nnx.PushTable"] = "nnx/PushTable.lua",
+               ["nnx.QDRiemaNNLinear"] = "nnx/QDRiemaNNLinear.lua",
+               ["nnx.SaturatedLU"] = "nnx/SaturatedLU.lua",
+               ["nnx.SoftMaxForest"] = "nnx/SoftMaxForest.lua",
+               ["nnx.SoftMaxTree"] = "nnx/SoftMaxTree.lua",
+               ["nnx.SparseCriterion"] = "nnx/SparseCriterion.lua",
+               ["nnx.SpatialClassifier"] = "nnx/SpatialClassifier.lua",
+               ["nnx.SpatialColorTransform"] = "nnx/SpatialColorTransform.lua",
+               ["nnx.SpatialDownSampling"] = "nnx/SpatialDownSampling.lua",
+               ["nnx.SpatialFovea"] = "nnx/SpatialFovea.lua",
+               ["nnx.SpatialGraph"] = "nnx/SpatialGraph.lua",
+               ["nnx.SpatialLinear"] = "nnx/SpatialLinear.lua",
+               ["nnx.SpatialMatching"] = "nnx/SpatialMatching.lua",
+               ["nnx.SpatialMaxSampling"] = "nnx/SpatialMaxSampling.lua",
+               ["nnx.SpatialNormalization"] = "nnx/SpatialNormalization.lua",
+               ["nnx.SpatialPadding"] = "nnx/SpatialPadding.lua",
+               ["nnx.SpatialPyramid"] = "nnx/SpatialPyramid.lua",
+               ["nnx.SpatialRadialMatching"] = "nnx/SpatialRadialMatching.lua",
+               ["nnx.SpatialReSampling"] = "nnx/SpatialReSampling.lua",
+               ["nnx.SpatialReSamplingEx"] = "nnx/SpatialReSamplingEx.lua",
+               ["nnx.SpatialRecursiveFovea"] = "nnx/SpatialRecursiveFovea.lua",
+               ["nnx.SpatialSparseCriterion"] = "nnx/SpatialSparseCriterion.lua",
+               ["nnx.SpatialUpSampling"] = "nnx/SpatialUpSampling.lua",
+               ["nnx.SuperCriterion"] = "nnx/SuperCriterion.lua",
+               ["nnx.Tic"] = "nnx/Tic.lua",
+               ["nnx.Toc"] = "nnx/Toc.lua",
+               ["nnx.TreeNLLCriterion"] = "nnx/TreeNLLCriterion.lua",
+               ["nnx.test-all"] = "nnx/test-all.lua",
+               ["nnx.test-omp"] = "nnx/test-omp.lua"
+            }
+         }
+      }
+   },
+   optim = {
+      ["1.0.5-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               optim = "optim/init.lua",
+               ["optim.ConfusionMatrix"] = "optim/ConfusionMatrix.lua",
+               ["optim.Logger"] = "optim/Logger.lua",
+               ["optim.adadelta"] = "optim/adadelta.lua",
+               ["optim.adagrad"] = "optim/adagrad.lua",
+               ["optim.adam"] = "optim/adam.lua",
+               ["optim.adamax"] = "optim/adamax.lua",
+               ["optim.asgd"] = "optim/asgd.lua",
+               ["optim.cg"] = "optim/cg.lua",
+               ["optim.checkgrad"] = "optim/checkgrad.lua",
+               ["optim.cmaes"] = "optim/cmaes.lua",
+               ["optim.de"] = "optim/de.lua",
+               ["optim.fista"] = "optim/fista.lua",
+               ["optim.lbfgs"] = "optim/lbfgs.lua",
+               ["optim.lswolfe"] = "optim/lswolfe.lua",
+               ["optim.nag"] = "optim/nag.lua",
+               ["optim.polyinterp"] = "optim/polyinterp.lua",
+               ["optim.rmsprop"] = "optim/rmsprop.lua",
+               ["optim.rprop"] = "optim/rprop.lua",
+               ["optim.sgd"] = "optim/sgd.lua",
+               ["optim/README.md"] = "optim/README.md",
+               ["optim/doc/algos.md"] = "optim/doc/algos.md",
+               ["optim/doc/image/parameterflattening.png"] = "optim/doc/image/parameterflattening.png",
+               ["optim/doc/image/parameterflattening.svg"] = "optim/doc/image/parameterflattening.svg",
+               ["optim/doc/image/parameterflattening.svg.png"] = "optim/doc/image/parameterflattening.svg.png",
+               ["optim/doc/intro.md"] = "optim/doc/intro.md",
+               ["optim/doc/logger.md"] = "optim/doc/logger.md",
+               ["optim/doc/logger_plot.png"] = "optim/doc/logger_plot.png"
+            }
+         }
+      }
+   },
    paths = {
       ["scm-1"] = {
          {
@@ -1163,6 +2112,109 @@ repository = {
             modules = {
                libpaths = "libpaths.dll",
                paths = "paths/init.lua"
+            }
+         }
+      }
+   },
+   penlight = {
+      ["1.5.4-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               luafilesystem = "1.6.3-2"
+            },
+            modules = {
+               pl = "pl/init.lua",
+               ["pl.Date"] = "pl/Date.lua",
+               ["pl.List"] = "pl/List.lua",
+               ["pl.Map"] = "pl/Map.lua",
+               ["pl.MultiMap"] = "pl/MultiMap.lua",
+               ["pl.OrderedMap"] = "pl/OrderedMap.lua",
+               ["pl.Set"] = "pl/Set.lua",
+               ["pl.app"] = "pl/app.lua",
+               ["pl.array2d"] = "pl/array2d.lua",
+               ["pl.class"] = "pl/class.lua",
+               ["pl.compat"] = "pl/compat.lua",
+               ["pl.comprehension"] = "pl/comprehension.lua",
+               ["pl.config"] = "pl/config.lua",
+               ["pl.data"] = "pl/data.lua",
+               ["pl.dir"] = "pl/dir.lua",
+               ["pl.file"] = "pl/file.lua",
+               ["pl.func"] = "pl/func.lua",
+               ["pl.import_into"] = "pl/import_into.lua",
+               ["pl.input"] = "pl/input.lua",
+               ["pl.lapp"] = "pl/lapp.lua",
+               ["pl.lexer"] = "pl/lexer.lua",
+               ["pl.luabalanced"] = "pl/luabalanced.lua",
+               ["pl.operator"] = "pl/operator.lua",
+               ["pl.path"] = "pl/path.lua",
+               ["pl.permute"] = "pl/permute.lua",
+               ["pl.pretty"] = "pl/pretty.lua",
+               ["pl.seq"] = "pl/seq.lua",
+               ["pl.sip"] = "pl/sip.lua",
+               ["pl.strict"] = "pl/strict.lua",
+               ["pl.stringio"] = "pl/stringio.lua",
+               ["pl.stringx"] = "pl/stringx.lua",
+               ["pl.tablex"] = "pl/tablex.lua",
+               ["pl.template"] = "pl/template.lua",
+               ["pl.test"] = "pl/test.lua",
+               ["pl.text"] = "pl/text.lua",
+               ["pl.types"] = "pl/types.lua",
+               ["pl.url"] = "pl/url.lua",
+               ["pl.utils"] = "pl/utils.lua",
+               ["pl.xml"] = "pl/xml.lua"
+            }
+         }
+      }
+   },
+   strict = {
+      ["0-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               strict = "strict.lua"
+            }
+         }
+      }
+   },
+   sundown = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {
+               mdcat = "mdcat"
+            },
+            dependencies = {},
+            modules = {
+               libsundown = "libsundown.dll",
+               sundown = "sundown/init.lua",
+               ["sundown.ascii"] = "sundown/ascii.lua",
+               ["sundown.env"] = "sundown/env.lua",
+               ["sundown.html"] = "sundown/html.lua",
+               ["sundown.htmlcdefs"] = "sundown/htmlcdefs.lua",
+               ["sundown.sdcdefs"] = "sundown/sdcdefs.lua"
+            }
+         }
+      }
+   },
+   sys = {
+      ["1.1-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               libsys = "libsys.dll",
+               sys = "sys/init.lua",
+               ["sys.colors"] = "sys/colors.lua",
+               ["sys.fpath"] = "sys/fpath.lua"
             }
          }
       }
@@ -1202,6 +2254,25 @@ repository = {
                ["torch/doc/tester.md"] = "torch/doc/tester.md",
                ["torch/doc/timer.md"] = "torch/doc/timer.md",
                ["torch/doc/utility.md"] = "torch/doc/utility.md"
+            }
+         }
+      }
+   },
+   xlua = {
+      ["1.1-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1"
+            },
+            modules = {
+               xlua = "xlua/init.lua",
+               ["xlua.OptionParser"] = "xlua/OptionParser.lua",
+               ["xlua.Profiler"] = "xlua/Profiler.lua"
             }
          }
       }
