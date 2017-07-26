@@ -15,6 +15,21 @@ dependencies = {
          }
       }
    },
+   luaffi = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
    paths = {
       ["scm-1"] = {
          {
@@ -78,6 +93,9 @@ modules = {
    },
    ["cwrap/README.md"] = {
       "cwrap/scm-1"
+   },
+   ffi = {
+      "luaffi/scm-1"
    },
    libpaths = {
       "paths/scm-1"
@@ -173,6 +191,18 @@ repository = {
                ["cwrap.cinterface"] = "cwrap/cinterface.lua",
                ["cwrap.types"] = "cwrap/types.lua",
                ["cwrap/README.md"] = "cwrap/README.md"
+            }
+         }
+      }
+   },
+   luaffi = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               ffi = "ffi.dll"
             }
          }
       }
