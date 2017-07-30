@@ -2,9 +2,9 @@
 
 This repository contains Windows binary builds of the [Torch](http://torch.ch/) machine learning framework.
 
-See the project branches for different build configurations: 32-bit vs. 64-bit, different LuaJIT versions, ..
+Use the project branches to choose a 64-bit or a 32-bit version.
 
-The git logs contain all build commands and repository versions that were used. The build process is mostly based on this: https://github.com/torch/torch7/wiki/Windows#using-visual-studio-manually
+For more information, see https://github.com/torch/torch7/wiki/Windows and https://github.com/torch/torch7/pull/287. The process for producing these builds is documented here: https://github.com/torch/torch7/wiki/Windows#using-visual-studio-manually. The [git logs](https://github.com/hiili/WindowsTorch/commits/) contain the actual build commands and repository versions that were used.
 
 ## Preinstalled packages
 
